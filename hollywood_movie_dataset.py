@@ -17,6 +17,20 @@ for i in range(len(hollywood_movies["Rotten Tomatoes %"])):
 
 print(filtered_list)
 
+#Part 4. c line chart comparing two trends
+critics = hollywood_movies["Rotten Tomatoes %"]
+audience = hollywood_movies["Audience score %"]
+plt.plot(critics, label="Rotten tomatoes score (%)", color ="pink")
+plt.plot(audience, label="Audience score (%)", color="blue", linestyle="dotted")
+plt.title("Critic vs Audience Scores for Hollywood Movies")
+plt.xlabel("Movie Index")
+plt.ylabel("Score out of 100")
+plt.grid(True)
+plt.legend()
+plt.show()
+
+
+
 
 # F (Scatter plot of Profitability vs Audience Score)
 clean_data=hollywood_movies.dropna(subset=["Profitability","Audience score %"])
