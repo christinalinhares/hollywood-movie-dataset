@@ -1,5 +1,4 @@
 
-
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -31,7 +30,8 @@ plt.grid(True)
 plt.legend()
 plt.show()
 
-#Part 4 H 
+
+#Part 4. H 
 
 plt.hist(hollywood_movies["Rotten Tomatoes %"])
 
@@ -41,6 +41,7 @@ y=np.array([0,2,8,10])
 plt.plot(x,y)
 plt.xlabel("Rotten Tomatoes %")
 plt.ylabel("Number of movies")
+
 plt.title("Correlation of Rottan Tomatoes and Number of Movies")
 plt.show()
 
@@ -52,4 +53,4 @@ y=np.array([2,1,8,6,18,2,1,4,4,5,3,7,14])
 mylabels=["20th Century Fox","CBS","Disney","Fox","Independent","Lionsgate","New Line","Paramount","Sony","Summit","The Weinstein Company","Universal","Warner Bros."]
 plt.pie(y,labels=mylabels)
 plt.show()
-   
+ 
