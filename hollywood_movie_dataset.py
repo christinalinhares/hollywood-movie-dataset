@@ -30,9 +30,17 @@ plt.grid(True)
 plt.legend()
 plt.show()
 
+#Part 4. g (bar chart)
+avg_profit=hollywood_movies.groupby("Lead Studio")["Profitability"].mean()
+plt.bar(avg_profit.index,avg_profit.values,color="hotpink")
+plt.title("Average Profitability by Studio")
+plt.xlabel("Studio")
+plt.ylabel("Average Profitability (x times the budget)")
+plt.xticks(rotation=45)
+plt.show()
+
 
 #Part 4. H 
-
 plt.hist(hollywood_movies["Rotten Tomatoes %"])
 
 x=np.array([0.,20.,40.6,80.1])
