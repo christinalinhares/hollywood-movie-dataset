@@ -41,7 +41,31 @@ plt.ylabel("Rotten Tomatoes (%)")
 plt.grid()
 plt.show()
 
+# This plot shows how audience and critic ratings relate for different movies.
 
+
+#Part4. e)
+
+# plot 1: Audience Score vs Profitability
+plt.subplot(1, 2, 1)
+plt.scatter(hollywood_movies["Audience score %"], hollywood_movies["Profitability"])
+plt.title("Audience Score vs Profitability")
+plt.xlabel("Audience score (%)")
+plt.ylabel("Profitability")
+plt.grid()
+# This plot shows if higher audience scores relate to better profitability.
+
+# plot 2: Rotten Tomatoes vs Profitability
+plt.subplot(1, 2, 2)
+plt.scatter(hollywood_movies["Rotten Tomatoes %"], hollywood_movies["Profitability"])
+plt.title("Rotten Tomatoes vs Profitability")
+plt.xlabel("Rotten Tomatoes (%)")
+plt.ylabel("Profitability")
+plt.grid()
+# This plot shows how critic ratings relate to profitability.
+
+plt.show()
+plt.tight_layout()
 
 
 # F (Scatter plot of Profitability vs Audience Score)
