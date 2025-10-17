@@ -30,6 +30,18 @@ plt.legend()
 plt.show()
 
 
+#Part4. d) 1 plot of any type using grid 
+
+plt.scatter(hollywood_movies["Audience score %"], hollywood_movies["Rotten Tomatoes %"])
+
+plt.title("Audience Score vs Rotten Tomatoes Ratings")
+plt.xlabel("Audience Score (%)")
+plt.ylabel("Rotten Tomatoes (%)")
+
+plt.grid()
+plt.show()
+
+
 
 
 # F (Scatter plot of Profitability vs Audience Score)
